@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Gallery</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image {
+        width: calc(33.33% - 20px); 
+        margin: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+    .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="image">
+        <img src="1.jpg" alt="Image 1">
+	<center><p>NewYork</p></center>
+    </div>
+    <div class="image">
+        <img src="2.jpg" alt="Image 2">
+        <center><p>Maldives</p></center>
+    </div>
+    <div class="image">
+        <img src="3.jpg" alt="Image 3">
+        <center><p>Paris</p></center>
+    </div>
+    <div class="image">
+        <img src="4.jpg" alt="Image 4">
+	<center><p>India</p></center>
+    </div>
+    <div class="image">
+        <img src="5.jpg" alt="Image 5">
+        <center><p>Disneyland</p></center>
+    </div>
+</div>
+</body>
+</html>
